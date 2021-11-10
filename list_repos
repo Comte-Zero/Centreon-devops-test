@@ -1,0 +1,3 @@
+#/bin/bash
+
+curl -s "https://api.github.com/users/centreon/repos?per_page=100" | grep -oP '(?<=@github.com:centreon\/).*(?=.git")'
