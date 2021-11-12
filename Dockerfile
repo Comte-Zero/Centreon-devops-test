@@ -14,3 +14,5 @@ RUN rpmbuild -bb root/rpmbuild/SPECS/list_repos.spec
 # build the package but at least that way you can test that it works, feel free
 # to comment it if it is unnecessary
 RUN rpm -i root/rpmbuild/RPMS/noarch/list_repos-*.noarch.rpm
+
+CMD ["list_repos"]
