@@ -1,4 +1,3 @@
-
 FROM centos:centos7
 
 RUN yum install -y rpmdevtools yum-utils tar unzip rpmlint && yum clean all
